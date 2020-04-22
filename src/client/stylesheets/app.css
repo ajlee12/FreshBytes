@@ -1,0 +1,11 @@
+.hero {
+  background-image: url('https://www.tranquilitylabs.com/wp-content/uploads/2016/07/bigstock-Female-Stall-Holder-At-Farmers-87399266-1024x683.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center,
+}
