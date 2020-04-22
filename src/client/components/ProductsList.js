@@ -13,11 +13,11 @@ const ProductsList = ({ products }) => {
       <> 
         <nav style={styles.nav}>
           <div>
-            <Link to='/' style={styles.navLinkHome}>
+            <Link to='/main' style={styles.navLinkHome}>
               <img src="../../../public/assets/NeighborsTableUC.png" height="150"></img>
             </Link>
           </div>
-          <Link to='/new' style={styles.navLinkProduct}>Create New Listing</Link>
+          <Link to='/new' style={styles.navLinkProduct}> {/* Input text here, position is to the right of NT */ }</Link>
         </nav>
         <div style={styles.container}>{renderProducts()}</div>
       </>

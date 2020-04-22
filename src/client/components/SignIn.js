@@ -63,7 +63,7 @@ export default function SignIn() {
             id="email"
             label="Name"
             name="email"
-            autoComplete="email"
+            // autoComplete="email"
             autoFocus
           />
           <TextField
@@ -75,22 +75,37 @@ export default function SignIn() {
             label="Password"
             type="password"
             id="password"
-            autoComplete="current-password"
+            // autoComplete="current-password"
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
-          <Button
+
+          {/* Testing Out Clickable Button that Leads to Home Page (input zip code) */}
+          
+          <Link to="/main">
+            <Button
+            // component={Link} to="/main"
             type="submit"
             fullWidth
             variant="contained"
             color="primary"
-            className={classes.submit}
           >
             Sign In
-          </Button>
+            </Button>
+          </Link>
+
+          {/* END TESTING HERE */}
+
+          {/* Google oAuth */}
+
+          <div className="g-signin2" data-onsuccess="onSignIn" />
+
+          {/* Google oAuth */}
+
           <Grid container>
+          
             <Grid item xs>
               <Link href="#" variant="body2">
                 Forgot password?
