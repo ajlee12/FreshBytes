@@ -52,11 +52,10 @@ export default function SignIn() {
       <CssBaseline />
       <div className={classes.paper}>
         <Typography component="h1" variant="h5">
-          Sign in
+          Welcome to FreshBytes!
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
-            color="white"
             variant="outlined"
             margin="normal"
             required
