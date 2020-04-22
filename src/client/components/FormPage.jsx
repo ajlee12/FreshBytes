@@ -57,7 +57,7 @@ export default function SignIn() {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          Welcome to FreshBytes
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
@@ -98,7 +98,7 @@ export default function SignIn() {
           <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">
-                Forgot password?
+                Fuck you
               </Link>
             </Grid>
             <Grid item>
