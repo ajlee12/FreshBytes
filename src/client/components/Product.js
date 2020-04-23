@@ -3,7 +3,7 @@
 import React, {useState} from 'react';
 import SellerModal from './SellerModal';
 
-const Product = ({ name, price, about, title, descripton, email, phone }) => {
+const Product = ({ name, price, about, title, description, email, phone }) => {
     const [toggle, setToggle] = useState(false)
 
     const handleModal = () => {
