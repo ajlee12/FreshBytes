@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import ProductsContainer from './containers/ProductsContainer';
+// import Login from './containers/Login';
+import ProductsContainer from './containers/ProductsContainer.js';
+
 
 export default class App extends Component {
   render() {

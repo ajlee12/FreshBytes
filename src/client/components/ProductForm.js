@@ -18,12 +18,12 @@ class ProductForm extends React.Component {
   }
 
   render() {
-    if(this.state.submitted === true) return <Redirect to='/'/>
+    if(this.state.submitted === true) return <Redirect to='/main'/>
     else return (
       <div>
         <nav style={styles.nav}>
           <div>
-            <Link to='/' style={styles.navLinkHome}>
+            <Link to='/main' style={styles.navLinkHome}>
               <img src="../../../public/assets/NeighborsTableUC.png" height="150"></img>
             </Link>
           </div>
