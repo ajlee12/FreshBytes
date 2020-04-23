@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import '../../../public/styles.css';
@@ -20,9 +22,7 @@ class Home extends React.Component {
     e.target.reset()
     this.setState({submitted: true})
   }
-// https://d3u03kk87rjfaq.cloudfront.net/wp-content/uploads/2009/06/03145943/farmers-markets.jpg
-//'https://southsoundmag.com/wp-content/uploads/2019/06/Photo-by-Daria-Shevtsova-via-Pexels-e1559759504402-1024x507.jpg'
-//'https://render.fineartamerica.com/images/rendered/default/canvas-print/12/6.5/mirror/break/images-medium/farmers-market-nancy-pahl-canvas-print.jpg' 
+
   render() {
     if(this.state.submitted === true) return <Redirect to='/products' />
     else return(
@@ -34,11 +34,10 @@ class Home extends React.Component {
         <form onChange={this.handleChange} onSubmit={this.handleSubmit} style={styles.form}>
           <input type="text" name='zip' placeHolder='enter your zip' style={styles.input}/>
           <button type="submit" style={styles.button}>Search</button>
+          <Link to="/new" ><button style={styles.button}>Sell Your Produce</button></Link>
         </form>
         </div>
-
         </div>
-        
       </div>
     )
   }
